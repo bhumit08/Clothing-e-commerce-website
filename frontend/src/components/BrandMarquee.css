@@ -1,0 +1,32 @@
+.brand-marquee-wrapper {
+  overflow: hidden;
+  background: #f9f9f9;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+.brand-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marqueeScroll 30s linear infinite;
+}
+
+.brand-name {
+  display: inline-block;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  margin-right: 100px;
+  color: #111;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@keyframes marqueeScroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
